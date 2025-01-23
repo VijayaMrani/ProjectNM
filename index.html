@@ -107,6 +107,25 @@
         tr:hover {
             background-color: #f1f1f1;
         }
+        @keyframes moveWord {
+  0% {
+    transform: translateX(0);
+    color: red;
+  }
+  50% {
+    transform: translateX(100px);
+    color: blue;
+  }
+  100% {
+    transform: translateX(0);
+    color: green;
+  }
+}
+
+.animated-word {
+  font-size: 3rem;
+  animation: moveWord 3s infinite;
+}
     </style>
 </head>
 <body>
@@ -179,7 +198,7 @@
         <div class="section-content">
             <h2>Area of Teaching Intrest</h2>
             <ul>
-                <li>DBMS</li>
+                <li><h3 class="animated-word">DBMS</h3></li>
                 <li>Data Mining</li>
                 <li>Big Data</li>
                 <li>Python</li>
